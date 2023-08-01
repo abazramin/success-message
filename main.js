@@ -18,12 +18,11 @@ function fromSuccess() {
     boxingOne.style.display = "none";
     BoxingTwo.style.display = "none";
 }
-fromSuccess();
+
 function validateEmail(email) {
     const emailRegex = /^[^\s@] +@[^\s@] +\.[^\s@]+$/
     return emailRegex.test(email);
 }
-validateEmail(email);
 submitBtn.addEventListener("click", () => {
     e.preventDefult()
     const email = emailInput.Value.trim();
@@ -44,11 +43,9 @@ submitBtn.addEventListener("click", () => {
 
     }
 })
-
-
 desMeg.addEventListener("click", () => {
     boxingOne.style.display = "block";
     BoxingTwo.style.display = "block";
     BoxAll.classList.remove("success");
     configMesEl.classList.remove("active")
-})
+});
