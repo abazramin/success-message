@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/master.css">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <!--  -->
+</head>
+
+<body>
+  <!-- Sign-up form start -->
+  <div class="container" id="container">
+    <div class="boxing-1" id="boxing-1">
+      <div class="boxing-info">
+        <h2>Stay updated</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            And much more!
+          </li>
+        </ul>
+      </div>
+      <form id="user-email">
+        <div class="form-item">
+          <label for="email">
+            <p>Email address</p>
+            <p id="invalid" class="invalid-email">valid email required</p>
+          </label>
+          <input type="email" id="email" placeholder=" email@company.com">
+        </div>
+        <div class="form-item">
+          <button type="submit" id="btn-submit">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="boxing-2" class="boxing-2">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="image">
+    </div>
+    <!-- Success message start -->
+    <div class="card-succes" id="card-succes">
+      <img src="./assets/images/icon-success.svg" alt="success">
+      <h2> Thanks for subscribing!</h2>
+      <p> A confirmation email has been sent to <span id="user-email"></span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button type="" id="dismiss-message"> Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+  </div>
+  <!-- Sign-up form end -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
